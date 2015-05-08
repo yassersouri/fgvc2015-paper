@@ -3,7 +3,7 @@
 
 [Reviews](https://rawgit.com/yassersouri/fgvc2015-paper/master/reviews/index.html)
 
-[Final Paper]()
+[Final Paper](http://yassersouri.github.io/papers/fgvc-2015-fast-bird-part.pdf)
 
 [Poster]() - coming soon
 
