@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Reviews For Paper
+</title>
+<style>
+body
+{
+	font-family:verdana,arial,helvetica;
+}
+#header
+{
+    width: 100%;
+    font-size: small;
+    background-color:#F7F7F7;
+}
+.headerSeparator
+{
+    background-color: #105586;
+}
+.printThemeText
+{
+    font-size:small;
+}
+.printThemeTable td
+{
+    vertical-align:top;
+}
+.printThemeGrid th
+{
+    color:white;
+    background:#5D7B9D;
+    font-weight:bold;
+}
+.printThemeGrid
+{
+    border-collapse:collapse;
+}
+.printThemeGrid td, .printThemeGrid th
+{
+    border:solid 1px #D6D3CE;
+    padding:4px 4px 4px 4px;
+}
+.printThemeGrid .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+.printThemeGrid .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+.cellprompt
+{
+	font-weight:bold;
+	white-space:nowrap;
+    width:100px;	
+}
+.paperHeader
+{
+    background-color:#dee3e7;
+    margin:5px 5px 15px 0px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.sectionHeader
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 0px;
+    width:99%;
+    text-decoration:underline;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+}
+.underlineheader
+{
+    text-decoration:underline;
+    font-weight:bold;
+    padding:5px 0px;
+}
+.response
+{
+    padding:5px 0px;
+}
+.reviewerlabel
+{
+    padding-right:20px;
+}
+.pageTitle
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.submissionDetailsView
+{
+}
+.submissionDetailsView tr
+{
+    vertical-align:top;
+}
+.submissionDetailsView td.prompt
+{
+    font-weight:bold;
+}
+.submissionDetailsView tr.sectionSeparator
+{
+
+}
+.submissionDetailsView tr.sectionSeparator td
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    color:Navy;
+}
+/*CSS Grid View General Definitions*/
+.CssGridView
+{
+    font-size:small; 
+}
+
+.CssGridView td, .CssGridView th
+{
+    padding:4px 4px 4px 4px;
+}
+
+/*CSS Compact Grid View General Definitions*/
+.CssGridViewCompact img
+{
+    border-style:none;
+    border-width:0px;
+}
+
+.CssGridViewCompact
+{
+    font-size:1em;
+    border-style:solid;
+    border-color:#D6D3CE;
+    border-width:1px;
+}
+
+.CssGridViewCompact .hrow a
+{
+    font-size:1em;
+}
+
+.CssGridViewCompact .row a, .CssGridViewCompact .altrow a
+{
+    font-size:0.8em;
+}
+
+.CssGridViewCompact .row .normal a, .CssGridViewCompact .row .normal, .CssGridViewCompact .altrow .normal a, .CssGridViewCompact .altrow .normal
+{
+    font-size:1em;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridView .hrow, .CssGridViewCompact .hrow
+{ 
+    background-color:#5D7B9D;
+    font-weight:bold;
+    color:White;
+}
+
+
+.CssGridViewCompact .hrow td
+{ 
+    border-bottom-width:0px;
+}
+
+.CssGridViewCompact .hrow th
+{ 
+    border-top-width:0px;
+    font-size:0.8em;
+    vertical-align:top;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.CssGridViewCompact .smaller
+{
+    font-size:0.8em;
+}
+
+/*CSS Grid View Row Styles*/
+.CssGridViewCompact .row, .CssGridViewCompact .altrow
+{
+    border-top-style:solid;
+    border-top-color:#D6D3CE;
+    border-top-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#D6D3CE;
+    border-bottom-width:1px;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridViewCompact .hrow .leftborder, .CssGridViewCompact .row .leftborder, .CssGridViewCompact .altrow .leftborder
+{
+    border-left-width:1px;
+    border-left-color:#D6D3CE;
+    border-left-style:solid;
+}
+
+.CssGridViewCompact .hrow .rightborder, .CssGridViewCompact .row .rightborder, .CssGridViewCompact .altrow .rightborder
+{
+    border-right-width:1px;
+    border-right-color:#D6D3CE;
+    border-right-style:solid;
+}
+
+.CssGridView .hrow a, .CssGridViewCompact .hrow a
+{ 
+    color:White;
+}
+ 
+.CssGridView .row, .CssGridViewCompact .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+
+.CssGridView .altrow, .CssGridViewCompact .altrow
+{ 
+    vertical-align:top;
+}
+
+.CssGridViewCompact .row td
+{ 
+    border-left-width:0px;
+    border-right-width:0px;
+}
+ 
+.CssGridViewCompact .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+
+.CssGridView .altrow tr, .CssGridViewCompact .altrow tr, .CssGridView .row tr, .CssGridViewCompact .row tr
+{ 
+    vertical-align:top;
+}
+</style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="ViewReviewsForPaper.aspx?paperId=13" id="aspnetForm">
+<div>
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYCZg9kFgQCAQ9kFgICAQ9kFgJmDw8WAh4EVGV4dAUCMTNkZAICD2QWAgIBD2QWAmYPDxYCHwEFO0Zhc3QgQmlyZCBQYXJ0IExvY2FsaXphdGlvbiBmb3IgRmluZS1HcmFpbmVkIENhdGVnb3JpemF0aW9uZGQCAw8PFgIfAGhkZAIFDxYCHgtfIUl0ZW1Db3VudAICFgRmD2QWBgIDD2QWAmYPFQETQXNzaWduZWRfUmV2aWV3ZXJfMWQCBw88KwANAQAPFgQeC18hRGF0YUJvdW5kZx8CAgJkFgJmD2QWBgIBD2QWBGYPDxYCHwEFDk92ZXJhbGwgUmF0aW5nZGQCAQ9kFgJmDxUBBkFjY2VwdGQCAg9kFgRmDw8WAh8BBRFEZXRhaWxlZCBDb21tZW50c2RkAgEPZBYCZg8VAbcEVGhpcyB3b3JrIHByZXNlbnRzIGEgQ05OLWJhc2VkIHBhcnQgbG9jYWxpemF0aW9uIGFwcHJvYWNoIHdpdGggYSBzaW5nbGUgZm9yd2FyZCBwYXNzIGluIHRoZSBuZXR3b3JrLCBhbmQgZGVtb25zdHJhdGVzIHNpZ25pZmljYW50IHNwZWVkdXAgb3ZlciBwcmV2aW91cyBtZXRob2RzLiAgVGhlIG1ldGhvZCBpcyBnZW5lcmFsaXphYmxlIHRvIHVuc2VlbiBjbGFzc2VzIGFuZCBjYW4gbG9jYWxpemUgbXVsdGlwbGUgcGFydCBpbnN0YW5jZXMuPGJyIC8+PGJyIC8+V2hpbGUgcXVhbnRpdGF0aXZlIHJlc3VsdHMgYXJlIGRpc2N1c3NlZCBtaW5pbWFsbHkgaW4gdGhlIHN1Ym1pc3Npb24sIHRoZSB3b3JrIGlzIHZlcnkgcHJvbWlzaW5nLCBhbmQgb25lIGV4cGVjdHMgdGhpcyB0byBiZSBjb3ZlcmVkIGluIGdyZWF0ZXIgZGV0YWlsIGluIHBvc3RlciBmb3JtIG9yIGFuIGV4dGVuZGVkIHB1YmxpY2F0aW9uLiAgSXQgd291bGQgYWxzbyBiZSBpbnRlcmVzdGluZyB0byBzZWUgcmVzdWx0cyBvbiBvdGhlciBkYXRhc2V0cyBiZXNpZGVzIENVQi4gIEkgcmVjb21tZW5kIGFjY2VwdGFuY2UuPGJyIC8+PGJyIC8+ZAIDDw8WAh8AaGRkAggPFQEAZAIBD2QWBgIDD2QWAmYPFQETQXNzaWduZWRfUmV2aWV3ZXJfMmQCBw88KwANAQAPFgQfA2cfAgICZBYCZg9kFgYCAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQ1TdHJvbmcgQWNjZXB0ZAICD2QWBGYPDxYCHwEFEURldGFpbGVkIENvbW1lbnRzZGQCAQ9kFgJmDxUBqQRUaGlzIHBhcGVyIHByb3Bvc2VzIGEgZmFzdCBwYXJ0IGxvY2FsaXphdGlvbiBtZXRob2QgYmFzZWQgb24gZGVlcCBjb252b2x1dGlvbmFsIG5ldHdvcmtzLiBJdCBsZXZlcmFnZXMgdGhlIHJlY2VudCB3b3JrIGZyb20gaHlwZXJjb2x1bW4gYW5kIFBhcnRSQ05OLCBhbmQgYnVpbGQgYSBwaXhlbC13aXNlIHBhcnQgY2xhc3NpZmllci4gVGhlIGZlYXR1cmUgaW5wdXQgaXMgdGhlIGh5cGVyLWNvbHVtbiBmZWF0dXJlIHZlY3RvciB3aGljaCBpcyB0aGUgY29uY2F0ZW5hdGlvbiBvZiBhbGwgZmlsdGVyIHJlc3BvbnNlcyBmcm9tIGFsbCBmZWF0dXJlIG1hcHMuIEl0IGFjaGlldmVzIGNvbXBhcmFibGUgcmVzdWx0cyBhcyBQYXJ0UkNOTiBtZXRob2QgYW5kIGl0IGlzIDIgb3JkZXJzIG9mIG1hZ25pdHVkZSBmYXN0ZXIuIEkgdGhpbmsgaXQgaXMgYSBzdHJvbmcgd29ya3Nob3AgcGFwZXIgYW5kIGl0IHdvdWxkIGJlIGJldHRlciB0byBzaG93IHNvbWUgcXVhbnRpdGF0aXZlIG51bWJlcnMgb2YgaG93IGFjY3VyYXRlIHRoZSBwYXJ0cyBhcmUgbG9jYXRlZC4gPGJyIC8+PGJyIC8+ZAIDDw8WAh8AaGRkAggPFQEAZBgCBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAxJGN0bDAwDzwrAAoBCAIBZAUfY3RsMDAkY3BoJGd2UmV2aWV3cyRjdGwwMCRjdGwwMA88KwAKAQgCAWQ0eTb0DCkhV4iqsAuw8tl9KEs6RQ==" type="hidden">
+</div>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BDE1D7CF" type="hidden">
+</div>
+<table id="header">
+<tbody><tr>
+<td width="100%"><a href="https://sites.google.com/site/thirdworkshoponfgvc/" target="_blank">FGVC2015</a><br><b>Third Workshop on Fine-Grained Visual Categorization (FGVC^3)</b><br></td>
+</tr>
+<tr class="headerSeparator">
+    <td style="height:5px"></td>
+</tr>
+</tbody></table>
+<table id="content"><tbody><tr><td class="contentBorder">&nbsp;</td><td class="contentContainer">
+<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Reviews For Paper</span>
+<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
+<div id="ctl00_cph_pnlReviews">
+	
+    <span style="font-size:Small;"><table id="ctl00_cph_infoSubmission_tblInfo" class="nicetable2" style="text-align:left; width: 100%;">
+		<tbody><tr>
+			<td width="100px"><b>Paper ID</b></td>
+			<td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">13</span></td>
+		</tr>
+		<tr>
+			<td><b>Title</b></td>
+			<td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">Fast Bird Part Localization for Fine-Grained Categorization</span></td>
+		</tr>
+	</tbody></table>
+	</span>
+    
+    
+            <hr>
+            <table>
+                <tbody><tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Assigned_Reviewer_1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody></table>
+            <div>
+		<table rules="all" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;" cellpadding="4" cellspacing="0" border="1">
+			<tbody><tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Detailed Comments</td><td style="width:80%;">
+                            This work presents a CNN-based part 
+localization approach with a single forward pass in the network, and 
+demonstrates significant speedup over previous methods.  The method is 
+generalizable to unseen classes and can localize multiple part 
+instances.<br><br>While quantitative results are discussed minimally in 
+the submission, the work is very promising, and one expects this to be 
+covered in greater detail in poster form or an extended publication.  It
+ would also be interesting to see results on other datasets besides CUB.
+  I recommend acceptance.<br><br>
+                        </td>
+			</tr>
+		</tbody></table>
+	</div>
+            
+        
+            <hr>
+            <table>
+                <tbody><tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label1" style="font-size:Small;">Assigned_Reviewer_2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody></table>
+            <div>
+		<table rules="all" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;" cellpadding="4" cellspacing="0" border="1">
+			<tbody><tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Strong Accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Detailed Comments</td><td style="width:80%;">
+                            This paper proposes a fast part localization
+ method based on deep convolutional networks. It leverages the recent 
+work from hypercolumn and PartRCNN, and build a pixel-wise part 
+classifier. The feature input is the hyper-column feature vector which 
+is the concatenation of all filter responses from all feature maps. It 
+achieves comparable results as PartRCNN method and it is 2 orders of 
+magnitude faster. I think it is a strong workshop paper and it would be 
+better to show some quantitative numbers of how accurate the parts are 
+located. <br><br>
+                        </td>
+			</tr>
+		</tbody></table>
+	</div>
+            
+        
+    <br>
+    <br>
+
+</div>
+</td><td class="contentBorder">&nbsp;</td></tr></tbody></table>
+</form>
+
+
+</body></html>
