@@ -74,39 +74,39 @@ RCNN while producing excellent results for object detection, and in this case pa
 We cast the problem of bird part localization as classifying pixels of the image to whether each pixel belongs to the part (positive) or not (negative). To this end, a feature vector for each pixel and a classifier for each part is needed. The convolutional layers of AlexNet \cite{alexnet} network pretrained on ILSVRC dataset \cite{ilsvrc} is used to extract the feature vectors. First, the input image is resized to the input dimension of AlexNet (i.e., 227x227). Then, with a single forward pass, the convolutional feature maps (\textit{conv1}-\textit{conv5}) for the input image is computed. Each feature map is then up-sampled to 227x227 as shown in Figure \ref{fig:method}.
 
 \begin{figure}
-   \centering
-   \includegraphics[height=6cm]{images/deeprf}
-   \caption{Overview of feature extraction step using the AlexNet \cite{alexnet} architecture. Input image is resized to a fixed dimension. CNN computes the feature maps in convolutional layers. Each feature map is then up-sampled to the fixed input dimension.}
-   \label{fig:method}
+	\centering
+	\includegraphics[height=6cm]{images/deeprf}
+	\caption{Overview of feature extraction step using the AlexNet \cite{alexnet} architecture. Input image is resized to a fixed dimension. CNN computes the feature maps in convolutional layers. Each feature map is then up-sampled to the fixed input dimension.}
+	\label{fig:method}
 \end{figure}
 
 \begin{figure*}
-   \centering
-   \subfigure[]{
-      \includegraphics[height=3cm]{images/hypercolumn}
-      \label{fig:hyper}
-   }
-   \subfigure[]{
-      \includegraphics[height=3cm]{images/training_points}
-      \label{fig:points}
-   }
-   \subfigure[]{
-      \includegraphics[height=3cm]{images/re_multiple}
-      \label{fig:r_m}
-   }
-   \subfigure[]{
-      \includegraphics[height=3cm]{images/re_drawing}
-      \label{fig:r_d}
-   }
-   \subfigure[]{
-      \includegraphics[height=3cm]{images/re_nohead}
-      \label{fig:r_n}
-   }
-   \caption{
+	\centering
+	\subfigure[]{
+		\includegraphics[height=3cm]{images/hypercolumn}
+		\label{fig:hyper}
+	}
+	\subfigure[]{
+		\includegraphics[height=3cm]{images/training_points}
+		\label{fig:points}
+	}
+	\subfigure[]{
+		\includegraphics[height=3cm]{images/re_multiple}
+		\label{fig:r_m}
+	}
+	\subfigure[]{
+		\includegraphics[height=3cm]{images/re_drawing}
+		\label{fig:r_d}
+	}
+	\subfigure[]{
+		\includegraphics[height=3cm]{images/re_nohead}
+		\label{fig:r_n}
+	}
+	\caption{
 \subref{fig:hyper} Feature vector for each pixel is extracted from up-sampled feature maps. \subref{fig:points} A set of positive (red) and negative (blue) points used for training a bird-head localizer.
 In \subref{fig:r_m}, \subref{fig:r_d}, and \subref{fig:r_n} on the left is the input image and on the right is the estimated probability of presence of bird's head-part in each pixel (in red). Colorbar shows the actual probability value estimated for the corresponding image.
 }
-   \label{fig:results}
+	\label{fig:results}
 \end{figure*}
 
 For AlexNet architecture, this gives a total of 1376 feature maps. The feature maps are stacked to form a hypercolumn (inspired by \cite{hypercolumn}). For each pixel in position $(x,y)$ in the image, a 1376 dimensional feature vector is extracted from this hypercolumn by concatenating filter response values at position $(x,y)$ from all feature maps (Figure \ref{fig:hyper}).
@@ -124,7 +124,7 @@ Three Random Forests are trained to localize the bird's bounding box, head, and 
 A linear SVM is used for categorization. With this setup, the method achieves $72.35\%$ mean accuracy for categorization, which is comparable to PartRCNN \cite{partrcnn} ($73.89\%$), while being at least 2 orders of magnitude faster.
 
 \textbf{Acknowledgments:}
-We would like to thank Dr. Erik Rodner, for his guidance during fruitful discussions, and Dr. Ehsan Adeli for his help in writing the paper.
+We would like to thank Dr. Ehsan Adeli for his help in writing the paper.
 
 {\scriptsize
 \bibliographystyle{ieee}
